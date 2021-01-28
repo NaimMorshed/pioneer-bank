@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="section-1" class="centered">
+        <header>
+            <h1 class="text-center">Welcome to Pioneer Bank</h1>
+        </header>
+        <main class="p-5">
+            <div class="card-custom p-5">
+                <h3>Login</h3>
+                <!--Input: email-->
+                <div class="mb-4">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <!--Input: password-->
+                <div class="mb-4">
+                    <input type="password" class="form-control" placeholder="password">
+                </div>
+                <!--LoginButton-->
+                <button class="btn btn-success" id="login-button">Enter</button>
+            </div>
+        </main>
+    </section>
+
+    <section id="section-2">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="transaction-card" style="background-color: slateblue;">
+                    <h4>Deposit</h4>
+                    <h1>$<span id="previous-deposit">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="transaction-card" style="background-color: salmon;">
+                    <h4>Withdraw</h4>
+                    <h1>$<span id="previous-withdraw">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="transaction-card" style="background-color: orange;">
+                    <h4>Balance</h4>
+                    <h1 id="withdrawn-amount">$<span id="current-balance">1200</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-custom submit-area">
+                    <h4>Deposit</h4>
+                    <input id="deposit-input" type="text" class="form-control" placeholder="$ amount you want to deposit">
+                    <br>
+                    <button id="deposit-button" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-custom submit-area">
+                    <h4>Withdraw</h4>
+                    <input id="withdraw-input" type="text" class="form-control" placeholder="$ amount you want to withdraw">
+                    <br>
+                    <button id="withdraw-button" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
